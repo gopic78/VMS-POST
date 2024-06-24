@@ -1,0 +1,371 @@
+.blog-card-main {
+    padding: 0px 80px;
+}
+
+.add-blog {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    background-color: #61CE70;
+}
+
+.back-blog {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+}
+
+.blog-card {
+    height: 425px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.createddate {
+    color: #b49494;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.blog-card:hover {
+    filter: blur(0.2px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 180px;
+    display: block;
+    max-width: none;
+    max-height: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+}
+
+.card-body {
+    padding: 20px 20px 10px 20px;
+}
+
+
+.card-title {
+    font-size: 17px;
+    color: #023068;
+    margin-bottom: 10px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.card-text {
+    height: 60px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 13px;
+    font-weight: 600;
+    /* color: #007bff; */
+    color: #61CE70;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.read-more .link {
+    text-decoration: none;
+
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.blog-add-main {
+    min-height: 82vh;
+}
+
+.not-found-blog {
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .back-blog {
+        top: 70px;
+        left: 15px;
+    }
+
+    .blog-details-main {
+        padding: 20px !important;
+    }
+
+    .blog-details-img-main img {
+        height: 300px !important;
+    }
+
+    .add-blog {
+        left: 10px;
+        width: 110px;
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .blog-card {
+        height: 400px;
+    }
+
+    .blog-card-main {
+        padding: 0px 0px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        height: 60px;
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        height: 45px;
+        font-size: 0.875rem;
+    }
+
+    .read-more {
+        font-size: 0.875rem;
+    }
+
+    .blog-details-main-background {
+        padding: 40px 10px !important;
+    }
+
+    .blog-title {
+        font-size: 1.2rem !important;
+    }
+
+    .blog-description {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (min-width:767px) and (max-width:991px) {
+    .blog-details-main-background {
+        padding: 40px 100px !important;
+    }
+}
+
+
+/* ---------------blog details---------- */
+.blog-details-main-background {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 40px 250px;
+}
+
+.blog-details-main {
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.blog-details-img-main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.blog-details-img-main img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.blog-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.login-popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    z-index: 1000;
+}
+
+.login-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-popup-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-popup-content .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+/* .blog-user-title{
+    color: #007bff;
+} */
+
+.blog-user-title span {
+    font-size: 15px;
+    color: #007bff;
+    font-weight: 600;
+}
+
+
+.comment-section {
+    margin-top: 40px;
+}
+
+.comment-section h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.comment-section .form-group {
+    margin-bottom: 20px;
+}
+
+.comment-section .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.comment-section .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.comment-section .form-control.comment-input {
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.comment-section .form-control.comment-input:focus {
+    border-bottom: 2px solid #007bff;
+    box-shadow: none;
+}
+
+.comment-section .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.blog-comments-show-main {
+    margin-top: 30px;
+}
+
+.blog-comments-show-main h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.blog-comment-left {
+    width: 80%;
+}
+
+.comment-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-card h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.comment-card .comment-date {
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.comment-card .comment-text {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 0px;
+    word-break: break-all;
+}
+
+.word-break {
+    word-break: break-all;
+}
