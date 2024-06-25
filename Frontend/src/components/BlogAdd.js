@@ -158,7 +158,6 @@ function BlogAdd() {
             const token = localStorage.getItem('token')
             const response = await axios.delete(Apiurl + `/blog/${deleteId}`,{
                 headers: {
-                    'Content-Type': 'multipart/form-data',
                     'x-access-token': token,
                 },
             });
@@ -173,6 +172,9 @@ function BlogAdd() {
     }
 
     const truncateDescription = (description) => {
+        if (!description) {
+            return '';
+        }
         if (description.length > 30) {
             return description.substring(0, 30) + '...';
         }
@@ -180,6 +182,9 @@ function BlogAdd() {
     };
 
     const truncateTitle = (title) => {
+        if (!title) {
+            return '';
+        }
         if (title.length > 20) {
             return title.substring(0, 20) + '...';
         }
@@ -289,7 +294,7 @@ function BlogAdd() {
                                                 <button className='btn btn-secondary btn-sm me-2' onClick={() => handleEdit(item._id, item)}>
                                                     <i className="fa-regular fa-pen-to-square"></i>
                                                 </button>
-                                                <button className='btn btn-danger btn-sm' onClick={() => handleDelete(item._id)}>
+                                                <button className='btn btn-danger btn-sm' onClick={() => handleDelete(item._id,item.title)}>
                                                     <i className="fa-solid fa-trash"></i>
                                                 </button>
                                             </div>
