@@ -17,6 +17,7 @@
 }
 
 .blog-card {
+    position: relative;
     height: 445px;
     background-color: #fff;
     border: none;
@@ -25,6 +26,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
 }
+
+.blog-category {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background-color: #61CE70;
+    border-radius: 3px; 
+}
+.blog-category p{
+    color: white;
+    margin-bottom: 0px;
+    padding: 3px;
+
+}
+
 
 .createddate {
     color: #b49494;
