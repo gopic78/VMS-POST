@@ -1,5 +1,6 @@
 .blog-card-main {
     padding: 0px 80px;
+    min-height: 61vh;
 }
 
 .add-blog {
@@ -16,7 +17,7 @@
 }
 
 .blog-card {
-    height: 425px;
+    height: 445px;
     background-color: #fff;
     border: none;
     border-radius: 3px;
@@ -38,7 +39,7 @@
 
 .card-img-top {
     max-width: 100%;
-    height: 180px;
+    height: 200px;
     display: block;
     max-width: none;
     max-height: none;
