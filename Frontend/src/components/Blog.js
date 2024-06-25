@@ -90,6 +90,9 @@ function Blog() {
                             <div className='col-lg-4 col-md-6 col-sm-12 mb-4' key={index}>
                                 <div className='card blog-card'>
                                     <img src={Apiurl + `/uploads/${item.image}`} alt='blog' className='card-img-top' />
+                                    <div className='blog-category'>
+                                        <p>{item.category}</p>
+                                    </div>
                                     <div className='card-body'>
                                         <h3 className='card-title' onClick={() => handlenavigate(item.title)}>
                                             {truncateTitle(item.title)}
