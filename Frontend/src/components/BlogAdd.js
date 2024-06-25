@@ -240,19 +240,19 @@ function BlogAdd() {
                         <div className='row'>
                             <div className='col-lg-6'>
                                 <label className='form-label'>Title</label>
-                                <input className='form-control' type='text' value={blog.title} onChange={(e) => setBlog({ ...blog, title: e.target.value })} />
+                                <input className='form-control' type='text' value={blog.title} onChange={(e) => setBlog({ ...blog, title: e.target.value })} required />
                             </div>
                             <div className='col-lg-6'>
                                 <label className='form-label' >Image</label>
-                                <input className='form-control' type='file' onChange={handleFileSelect} />
+                                <input className='form-control' type='file' onChange={handleFileSelect} required />
                             </div>
                             <div className='col-lg-6'>
                                 <label className='form-label mt-1'>Description</label>
-                                <input className='form-control' type='text' value={blog.description} onChange={(e) => setBlog({ ...blog, description: e.target.value })} />
+                                <input className='form-control' type='text' value={blog.description} onChange={(e) => setBlog({ ...blog, description: e.target.value })} required />
                             </div>
                             <div className='col-lg-6'>
                                 <label className='form-label mt-1'>Category</label>
-                                <input className='form-control' type='text' value={blog.category} onChange={(e) => setBlog({ ...blog, category: e.target.value })} />
+                                <input className='form-control' type='text' value={blog.category} onChange={(e) => setBlog({ ...blog, category: e.target.value })} required />
                             </div>
                         </div>
                         <button type='submit' className='btn btn-primary btn-sm mt-3'>ADD</button>
